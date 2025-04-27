@@ -1,0 +1,130 @@
+
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #ccc;
+            transform: translateX(-50%);
+        }
+
+        .timeline-event {
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-event:nth-child(odd) {
+            left: 0;
+            text-align: right;
+            padding-right: calc(50% + 20px);
+        }
+
+        .timeline-event:nth-child(even) {
+            left: 50%;
+            text-align: left;
+            padding-left: calc(50% + 20px);
+        }
+
+        .timeline-event-content {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .event-date {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .event-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .event-description {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .event-image {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+        }
+
+        .timeline-event:nth-child(odd) .event-image {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .timeline-event:nth-child(even) .event-image {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        /* Puntos en la línea */
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 12px;
+            height: 12px;
+            background-color: #007bff;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-event:nth-child(odd)::before {
+            left: calc(50% - 1px);
+        }
+
+        .timeline-event:nth-child(even)::before {
+            left: calc(50% - 1px);
+        }
+
+        /* Flechas o indicadores */
+        .timeline-event:nth-child(odd) .timeline-event-content::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: -10px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #e9ecef;
+        }
+
+        .timeline-event:nth-child(even) .timeline-event-content::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #e9ecef;
+        }
