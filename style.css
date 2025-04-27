@@ -6,9 +6,21 @@ body {
 
 h1{
     color: #ffffff;
+    font-size: 200%;
 }
 h4{
     color: #c3c3c3;
+    color: #c3c3c3;font-size: 100%;
+
+}
+h3{
+    font-size: 100%;
+}
+p{
+    font-size: 60%;
+}
+span{
+    font-size: 30%;
 }
 
 button{
@@ -72,7 +84,7 @@ button:hover{
 
 .timeline-event-content {
     background-color: #4d4d4d;
-    padding: 3%;
+    padding: 5%;
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
