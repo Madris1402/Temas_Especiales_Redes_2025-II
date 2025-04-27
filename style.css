@@ -15,7 +15,7 @@ button{
     border-radius: 23px;
     background-color: #4d4d4d;
     border-color:#91ffed;
-    padding: 10px;
+    padding: 3%;
     color: #ffffff;
 }
 
@@ -23,16 +23,16 @@ button:hover{
     border-radius: 23px;
     background-color: #91ffed;
     border-color:#91ffed;
-    padding: 10px;
+    padding: 3%;
     color: #4d4d4d;
 }
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 85%;
     margin: 0 auto;
     background-color: #343434;
-    padding: 20px;
+    padding: 5%;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -48,8 +48,8 @@ button:hover{
 }
 
 .timeline-event {
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 3%;
+    margin-bottom: 10%;
     position: relative;
     transition: transform 0.3s ease-in-out; /* Añadimos una transición suave */
 }
@@ -72,7 +72,7 @@ button:hover{
 
 .timeline-event-content {
     background-color: #4d4d4d;
-    padding: 15px;
+    padding: 3%;
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
@@ -96,7 +96,7 @@ button:hover{
 }
 
 .event-image {
-    max-width: 250px;
+    max-width: 60%;
     height: auto;
     margin-bottom: 10px;
     display: block;
@@ -138,7 +138,7 @@ button:hover{
 .center{
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 3%;
 }
 
 .center-text{
